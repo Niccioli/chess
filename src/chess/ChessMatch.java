@@ -4,6 +4,7 @@ import boardgame.Board;
 import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.King;
+import chess.pieces.Pawn;
 import chess.pieces.Rook;
 
 import java.util.ArrayList;
@@ -202,11 +203,28 @@ public class ChessMatch {
     }
 
     private void inicialSetup(){
-        placeNewPiece('h', 7, new Rook(board, WHITE));
-        placeNewPiece('d', 1, new Rook(board, WHITE));
+        placeNewPiece('a', 1, new Rook(board, WHITE));
         placeNewPiece('e', 1, new King(board, WHITE));
+        placeNewPiece('h', 1, new Rook(board, WHITE));
+        placeNewPiece('a', 2, new Pawn(board, WHITE));
+        placeNewPiece('b', 2, new Pawn(board, WHITE));
+        placeNewPiece('c', 2, new Pawn(board, WHITE));
+        placeNewPiece('d', 2, new Pawn(board, WHITE));
+        placeNewPiece('e', 2, new Pawn(board, WHITE));
+        placeNewPiece('f', 2, new Pawn(board, WHITE));
+        placeNewPiece('g', 2, new Pawn(board, WHITE));
+        placeNewPiece('h', 2, new Pawn(board, WHITE));
 
-        placeNewPiece('b', 8, new Rook(board, BLACK));
-        placeNewPiece('a', 8, new King(board, BLACK));
+        placeNewPiece('a', 8, new Rook(board, BLACK));
+        placeNewPiece('e', 8, new King(board, BLACK));
+        placeNewPiece('h', 8, new Rook(board, BLACK));
+        placeNewPiece('a', 7, new Pawn(board, BLACK));
+        placeNewPiece('b', 7, new Pawn(board, BLACK));
+        placeNewPiece('c', 7, new Pawn(board, BLACK));
+        placeNewPiece('d', 7, new Pawn(board, BLACK));
+        placeNewPiece('e', 7, new Pawn(board, BLACK));
+        placeNewPiece('f', 7, new Pawn(board, BLACK));
+        placeNewPiece('g', 7, new Pawn(board, BLACK));
+        placeNewPiece('h', 7, new Pawn(board, BLACK));
     }
 }
